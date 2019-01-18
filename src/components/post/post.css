@@ -1,0 +1,48 @@
+.post {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.post:nth-child(2n) {
+  background-color: #e1e1e1;
+}
+
+.post > div {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  flex: 1 1 100%;
+  word-break: break-word;
+  font-size: 9pt;
+}
+.votearrow {
+  width: 5px;
+  height: 10px;
+}
+.votearrow span {
+  padding-top: 3px;
+}
+.votearrow > img {
+  width: 12px;
+  height: 12px;
+  padding-left: 5px;
+}
+.urlTitle {
+  color: #828282;
+  font-size: 7pt;
+}
+.post > div:nth-of-type(1) {
+  flex: none;
+  width: 60px;
+}
+.post > div:nth-of-type(2) {
+  flex: none;
+  width: 55px;
+}
+.post > div:nth-of-type(3) {
+  flex: 3;
+}
+.post > div:nth-of-type(4) {
+  flex: 7;
+}
