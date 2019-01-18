@@ -3,7 +3,6 @@ header {
   padding: 20px 0 10px 10px;
   font-family: Verdana, Geneva, sans-serif;
   color: #222222;
-  height:30px;
 }
 header > img {
   border: 1px solid #fff;
@@ -11,7 +10,7 @@ header > img {
 header > img,
 header a {
   vertical-align: middle;
-  color:#fff;
+  color: #fff;
   padding: 0 10px 0 10px;
   font-size: 10pt;
 }

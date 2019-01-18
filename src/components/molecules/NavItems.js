@@ -8,7 +8,11 @@ export const NavItems = ({ links }) => {
     <ul className="hz-list">
       {links.map((link, i) => (
         <li key={i}>
-          <Link to={link.url}>{link.text}</Link>
+          <span>
+            <Link className="footer-nav" to={link.url}>
+              {link.text}
+            </Link>
+          </span>
         </li>
       ))}
     </ul>

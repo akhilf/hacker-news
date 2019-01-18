@@ -25,11 +25,13 @@ class Footer extends PureComponent {
     const { search, navLinks, more } = footerModel;
     return (
       <footer>
-        <div onClick={this.loadNextPage}>{more}</div>
+        <div onClick={this.loadNextPage} className="more-container">
+          {more}
+        </div>
         <div className="footer-content">
           <NavItems links={navLinks} />
-          <div>
-            {search}
+          <div className="searchbox-container">
+            <span className="search-txt">{search} : </span>
             <input type="text" />
           </div>
         </div>

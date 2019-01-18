@@ -10,7 +10,7 @@ const Header = props => {
   return (
     <header>
       <img src={logoUrl} alt="logo" />
-      <Link to="news">{title}</Link>|
+      <Link to="news">{title}</Link>
       <NavItems links={navLinks} />
     </header>
   );

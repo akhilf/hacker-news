@@ -1,6 +1,26 @@
-footer{
+footer {
   background-color: #f6f6ef;
 }
 .footer-content {
   text-align: center;
+}
+.more-container {
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: #ff6600;
+}
+footer .footer-nav {
+  font-size: 10pt;
+  color: #000;
+  line-height: 1.2px;
+  padding: 10px;
+}
+.searchbox-container {
+  padding: 10px 0 10px 0;
+  font-size: 12pt;
+}
+.search-txt {
+  font-size: 12pt;
+  color: #828282;
 }
