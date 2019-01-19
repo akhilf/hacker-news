@@ -7,7 +7,6 @@
 }
 
 .post > div {
-  display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
   flex-basis: 0;
@@ -45,4 +44,12 @@
 }
 .post > div:nth-of-type(4) {
   flex: 7;
+}
+
+p.details{
+  margin-top: 7px; 
+}
+
+img.upvote,.hide{
+  cursor: pointer;
 }
