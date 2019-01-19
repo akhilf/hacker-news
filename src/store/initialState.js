@@ -1,8 +1,6 @@
 export const initialState = {
   NewsState: {
-    data: {}
-  },
-  FooterState: {
+    hits: [],
     pageNumber: 0
   }
 };
