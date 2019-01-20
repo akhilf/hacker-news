@@ -25,7 +25,7 @@ function PostEntity(props) {
   this.siteName = getSiteName(url);
 
   function getSiteName(url) {
-    var hostname;
+    let hostname;
     if (url) {
       if (url.indexOf("//") > -1) {
         hostname = url.split("/")[2];

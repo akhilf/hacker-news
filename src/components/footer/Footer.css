@@ -1,26 +1,19 @@
 footer {
   background-color: #f6f6ef;
+  border-top: 2px solid #ff6600;
 }
-.footer-content {
+footer .footer-content {
   text-align: center;
 }
-.more-container {
-  border-bottom: 2px solid #ff6600;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  color: #ff6600;
-}
 footer .footer-nav {
-  font-size: 10pt;
+  font-size: 9pt;
   color: #000;
-  line-height: 1.2px;
   padding: 10px;
 }
-.searchbox-container {
-  padding: 10px 0 10px 0;
-  font-size: 12pt;
+footer .searchbox-container {
+  padding: 20px 0 20px 0;
+  font-size: 9pt;
 }
-.search-txt {
-  font-size: 12pt;
+footer .search-txt {
   color: #828282;
 }

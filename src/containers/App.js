@@ -3,7 +3,6 @@ import Layout from "../components/hoc/Layout";
 import News from "./news/News";
 import New from "./new/New";
 import { Route, Switch } from "react-router-dom";
-import "./App.css";
 
 class App extends Component {
   render() {
