@@ -1,6 +1,7 @@
 .post {
   display: flex;
   flex-flow: row nowrap;
+  padding-left: 50px;
 }
 .post > div {
   flex-grow: 1;
@@ -16,7 +17,6 @@
 }
 .post > div:nth-of-type(2) {
   flex: none;
-  width: 55px;
 }
 .post > div:nth-of-type(3) {
   flex: 3;
@@ -28,7 +28,6 @@
   background-color: #e1e1e1;
 }
 .post .votearrow {
-  width: 5px;
   height: 10px;
 }
 .post .votearrow > span {
