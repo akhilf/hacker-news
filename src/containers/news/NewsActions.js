@@ -6,7 +6,6 @@ export const getNews = page => {
     const { UPDATE_POSTS, NEWS_BASE_URL } = NewsConstants;
     const url = `${NEWS_BASE_URL}${page}`;
     axios.get(url).then(res => {
-      console.log(res.data);
       dispatch({
         type: UPDATE_POSTS,
         payload: res.data

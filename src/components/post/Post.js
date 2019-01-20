@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PostEntity from "./postEntity";
 import "./post.css";
-import votearrow from "./grayarrow2x.gif";
+import postModel from "./postModel";
 
 class Post extends Component {
   constructor(props) {
@@ -9,6 +9,7 @@ class Post extends Component {
   }
   render() {
     const postEntity = new PostEntity(this.props);
+    const { upvoteUrl } = postModel;
     const {
       author,
       num_comments,
@@ -26,32 +27,28 @@ class Post extends Component {
           <span>{points}</span>
           <img
             className="upvote"
-            src={votearrow}
+            src={upvoteUrl}
             alt="uparrow"
             onClick={() => this.props.upVote(objectID)}
           />
         </div>
         <div>
           <p>
-            <a href={url}>{title} </a>
+            <a>{title} </a>
             {url && (
-              <span>
-                ({" "}
-                <a className="urlTitle" href={url}>
-                  {siteName}
-                </a>
-                )
+              <span className="urlTitle">
+                ( <a href={url}>{siteName}</a>) by &nbsp;
               </span>
             )}
-          </p>
-          <p className="details">
-            <span>{points} points by </span>
-            <a href="#">{author} </a> 7 hours ago
-            <span onClick={() => this.props.hide(objectID)} className="hide">
-              {" "}
-              hide{" "}
+            <span className="details">
+              <a href="#">{author} </a>{" "}
+              <span className="urlTitle">7 hours ago </span>[
+              <span onClick={() => this.props.hide(objectID)} className="hide">
+                {" "}
+                hide{" "}
+              </span>{" "}
+              ]
             </span>
-            <span>370 comments</span>
           </p>
         </div>
       </div>
