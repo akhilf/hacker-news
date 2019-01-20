@@ -112,7 +112,7 @@ body {
 .new,
 .news {
   font-size: 10pt;
-  padding: 10px 2px 10px 2px;
+  padding: 20px 2px 10px 2px;
 }
 .title {
   font-size: 8pt;
@@ -145,7 +145,7 @@ ul.hz-list:after {
 }
 .more-container {
   padding-bottom: 10px;
-  padding-left: 145px;
+  padding-left: 190px;
   color: #ff6600;
   font-size: 10pt;
 }
